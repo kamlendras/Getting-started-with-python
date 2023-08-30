@@ -1,9 +1,9 @@
  print("hello world")
  print("your_name")
-# string
+#string
  name = "your_name"
  age = "your_age"
-# float
+#float
  name = "your_name"
  age = "your_age"
  print(name)
