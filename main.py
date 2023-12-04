@@ -42,3 +42,13 @@ for i in range (1, 6) :
     for j in range (1, i+1) :
         print(j, end="")
         print()
+
+#Write a python program using a function to print factorial of given number.
+
+def facto() :
+    n=int(input("Enter the number:"))
+    f=1
+    for i in range(1,n+1) :
+        f*=i
+    print("Factorial of " ,n, "is: ",f, end=" " )        
+facto()
