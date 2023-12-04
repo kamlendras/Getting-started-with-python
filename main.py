@@ -101,3 +101,27 @@ def count_alpha():
                 L = L+1
                 print ("total lower case alphabats ",L)
 count_alpha() 
+
+
+
+
+"""Write a python program to read a file named “info.txt”, count
+and print total words starting with “t” or “T” in the file.
+File Content:
+
+ Python is super and trending language
+ A text file stores textual data.
+ Binary files can handle binary data.
+ CSV files can handle tabular data.
+ """
+ 
+def count_words () :
+    w=0
+    with open ("info.txt") as f:
+        for line in f:
+            for word in line.split () :
+               if(word[0]=="t" or word[0]=="T") :
+                print(word)
+                w=w+1
+        print ("total words statting with 't' are", w)                
+count_words ()     
