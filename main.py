@@ -65,3 +65,23 @@ def user_pass (passward,username="Admin"):
          print("Password is incorrect!!!!")
 password=input("Enter the password:")
 user_pass(password)
+
+
+"""Write a python program to demonstrate the concept of variable
+length argument to calculate the product and addition of given
+number."""
+
+def add (*n) :
+    total=0
+    for i in n:
+        total=total + i
+    print ("Addition of given numbers", total)
+
+def product (*n) :
+    p=1
+    for i in n:
+        p = p*i
+    print ("Product of given numbers:",p)
+     
+add(3,6,8,2,4)
+product(3,6,8,2)
