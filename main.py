@@ -85,3 +85,19 @@ def product (*n) :
      
 add(3,6,8,2,4)
 product(3,6,8,2)
+
+"""Write a python program to read a file named “article.txt”, count
+and print total alphabets in the file."""
+
+def count_alpha():
+    L=0
+    with open ("article.txt") as f:
+        while True:
+            c=f.read(1)
+            if not c:
+                break
+            print (c,end='')
+            if((c>'A' and c<= 'Z') or (c>='a' and c<='z')):
+                L = L+1
+                print ("total lower case alphabats ",L)
+count_alpha() 
