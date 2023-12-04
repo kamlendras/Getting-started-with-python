@@ -125,3 +125,40 @@ def count_words () :
                 w=w+1
         print ("total words statting with 't' are", w)                
 count_words ()     
+
+
+"""
+Write a program to count a total number of lines and count the
+total number of lines starting with 'A', 'B', and 'C' from the file
+article.txt.
+File Content:
+
+Python is a super and treanding language.
+Allows to store the output in the files.
+A text file stores textual data.
+Binary files can handle binary data.
+Binary files use pickle module to store data.
+CSV files allows to handle tabular data.
+CSV files can be read easily using CSV reader object.
+"""
+def program5() :
+    with open ("article.txt", "r") as f1:
+        data=f1.readlines()
+        count_lines=0
+        count_A=0
+        count_B=0
+        count_C=0
+        for lines in data:
+            count_lines+=1
+            if lines [0] =='A':
+                count_A+=1
+            if lines[0] =='B':
+                count_B+=1
+            if lines[0] =='C':
+                count_C+=1
+        print("Total Number of lines are:",count_lines)
+        print("Total Number of lines strating with A are:",count_A)
+        print("Total Number of lines strating with B are:",count_B)
+        print("Total Number of lines strating with C are:",count_C)
+program5()        
+        
