@@ -52,3 +52,16 @@ def facto() :
         f*=i
     print("Factorial of " ,n, "is: ",f, end=" " )        
 facto()
+
+
+"""Write a python program to accept the username "Admin" as the
+default argument and password 123 entered by the user to allow
+login into the system."""
+
+def user_pass (passward,username="Admin"):
+    if passward=='123':
+       print("You have logged into system")
+    else:
+         print("Password is incorrect!!!!")
+password=input("Enter the password:")
+user_pass(password)
